@@ -106,13 +106,14 @@ func init() {
 
 	if err = g.AddTemplate("slidemenu", `<!-- Slide in menu once logged in  -->
 <nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right" id="slidemenu">
-  <a href="#" id="menu-fragrances"><i class="fa fa-snowflake-o"></i> Fragrances</a>
-  <a href="#" id="menu-skincare"><i class="fa fa-hand-lizard-o"></i> Skincare</a>
-  <a href="#" id="menu-merchandise"><i class="fa fa-gift"></i> Merchandise</a>
-  <a href="#" id="menu-ambassadors"><i class="fa fa-user-circle-o"></i> Ambassadors</a>
-  <a href="#" id="menu-blog"><i class="fa fa-hashtag"></i> Blog</a>
-  <a href="#" id="menu-about"><i class="fa fa-question-circle-o"></i> About</a>
-  <a href="#" id="menu-contact"><i class="fa fa-at"></i> Contact</a>
+  <a href="#" id="menu-contact"><i class="fa fa-code"></i> Go Code</a>
+  <a href="#" id="menu-fragrances"><i class="fa fa-superpowers"></i> Services</a>
+  <a href="#" id="menu-skincare"><i class="fa fa-address-book-o"></i> Portfolio</a>
+  <a href="#" id="menu-merchandise"><i class="fa fa-gift"></i> Blog</a>
+  <a href="#" id="menu-ambassadors"><i class="fa fa-github-alt"></i> GitHub</a>
+  <a href="#" id="menu-blog"><i class="fa fa-lock"></i> Security</a>
+  <a href="#" id="menu-about"><i class="fa fa-database"></i> Database</a>
+  <a href="#" id="menu-contact"><i class="fa fa-edit"></i> Framework</a>
 </nav> 
 
 
