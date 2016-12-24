@@ -3,8 +3,14 @@ package main
 import "honnef.co/go/js/dom"
 
 func doSplashPage() {
+	w := dom.GetWindow()
+	doc := w.Document()
+
 	fadeIn("ministry-splash-box", "ministry-options")
 	noButtons()
+
+	doc.QuerySelector(".ministry-splash-box").Class().Add("unrotate")
+
 	// showButtons("portfolio", "code")
 }
 
@@ -28,7 +34,7 @@ func showTopMenu() {
 
 	doc.QuerySelector(".ministry-logo-top").AddEventListener("click", false, func(evt dom.Event) {
 		print("Clicked on logo")
-		doc.QuerySelector("#code-example").Class().Add("cbp-spmenu-open")
+		doc.QuerySelector("#code-example").Class().Toggle("cbp-spmenu-open")
 	})
 
 	sTemplate := MustGetTemplate("code-example")
@@ -37,5 +43,6 @@ func showTopMenu() {
 	doc.QuerySelector("#ministry-code").AddEventListener("click", false, func(evt dom.Event) {
 		print("clik on code")
 		doc.QuerySelector("#code-example").Class().Remove("cbp-spmenu-open")
+		// doc.QuerySelector("#code-example").Class().Add("hidden")
 	})
 }

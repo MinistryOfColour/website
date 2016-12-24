@@ -6,6 +6,12 @@ body
 	-webkit-filter: saturate(3)
 	filter: saturate(3)
 
+.ministry-cyrillic-thing
+	width: 100vw
+	height: 100vh
+	font-family: 'Anonymous Pro', sans-serif
+	font-size: 15vw
+
 .ministry-logo-top
 	position: absolute
 	top: 0
@@ -17,32 +23,37 @@ body
 .ministry-splash-box
 	position: absolute
 	overflow-x: hidden
-	top: 5rem
+	// top: 5rem
 	background-image: url("../img/power1.png")
 	background-repeat: no-repeat
-	background-position: bottom
+	background-position: top
 	background-size: contain
 	width: 99vw
 	max-width: 99vw
-	height: calc(100vh - 5rem + 1rem)
+	height: calc(100vh - 12rem)
 	cursor: pointer
-	@media (orientation: portrait)
-		background-position-y: center
+	transition: all 2s
+	transform: rotate(-60deg)
+	// @media (orientation: portrait)
+		// background-position-y: center
+
+.unrotate
+	transform: rotate(0)
 
 .ministry-title-name
 	font-family: 'VT323', sans-serif
-	font-size: 4rem
+	font-size: 6vw
 	position: absolute
 	height: 5rem
-	left: 16rem
-	color: green
-	@media (max-width: 320px)
-		font-size: 2.2rem
-		left: 9rem
-	@media (max-width: 360px)
-		font-size: 2.4rem
-		left: 11rem
+	text-align: center
+	left: 10rem
 
+	display: block
+	color: green
+	@media (min-width: 320px)
+		display: none
+	@media (min-width: 360px)
+		display: block
 
 .ministry-options
 	font-family: 'VT323', sans-serif
@@ -50,6 +61,8 @@ body
 	position: absolute
 	bottom: 5rem
 	width: 100%
+	@media(max-width: 360px)
+		bottom: 1rem
 
 	.option-row
 		display: flex

@@ -7,6 +7,7 @@ import (
 )
 
 var elements = []string{
+	"ministry-cyrillic-thing",
 	"ministry-splash-box",
 }
 
