@@ -1,0 +1,59 @@
+.jass-sale-items
+	position: absolute
+	background-color: rgba(73, 222, 48, 0.43)
+	background-color: white
+	top: 9rem
+	width: 100%
+	padding: 2rem
+
+	li 
+		list-style: none
+		list-style-type: none
+		display: inline
+		max-width: calc(100vh - 4rem)
+		@media (orientation: landscape)
+			max-width: calc(50vw - 3rem)
+
+	img
+		max-width: calc(100vh - 4rem)
+		max-height: calc(100vh - 13rem)
+		@media (orientation: portrait)
+			max-width: calc(50vw - 3rem)
+
+.jass-sales-bar
+	position: fixed
+	z-index: 66
+	top: 5rem
+	height: 4rem
+	width: 100%
+	background-color: black
+	color: white 
+	display: flex
+	justify-content: flex-end
+	flex-direction: row
+	padding: .5rem
+
+.sales-cart
+	flex: 0 0 5rem
+
+.sales-account
+	flex: 1 0 5rem
+
+.sales-qty
+	flex: 0 1 3rem
+	font-size: 2rem
+	font-family: 'Roboto',sans-serif
+
+.sales-amount
+	flex: 0 1 8rem
+	font-size: 2rem
+	font-family: 'Roboto',sans-serif
+
+.sales-checkout
+	flex: 0 1 2rem
+
+
+
+
+
+

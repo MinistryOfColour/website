@@ -1,0 +1,36 @@
+#hamburger { position: absolute; right: 0%; top: 22%; }
+
+#hamburger { cursor: pointer; padding: 10px 35px 16px 0px; }
+#hamburger span, #hamburger span:before, #hamburger span:after {
+  cursor: pointer;
+  border-radius: 1px;
+  height: 5px;
+  width: 35px;
+  background: black;
+  color: red;
+  position: absolute;
+  display: block;
+  content: '';
+}
+#hamburger span:before {
+  top: -10px; 
+}
+#hamburger span:after {
+  bottom: -10px;
+}
+
+#hamburger span, #hamburger span:before, #hamburger span:after {
+  transition: all 200ms ease-in-out;
+}
+#hamburger.active span {
+  background-color: transparent;
+}
+#hamburger.active span:before, #hamburger.active span:after {
+  top: 0;
+}
+#hamburger.active span:before {
+  transform: rotate(45deg);
+}
+#hamburger.active span:after {
+  transform: rotate(-45deg);
+}

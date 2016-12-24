@@ -1,0 +1,441 @@
+.svg-console
+  height: calc(100% - 6rem)
+  width: calc(100% - 20rem)
+  margin-left: 1rem
+  margin-right: 1rem
+  margin-bottom: 1rem
+  margin-top: 5rem
+  border: 1px solid black
+  background-image: url(/img/bg.png)
+  background-size: cover
+  background-repeat: no-repeat
+  position: absolute
+  top: 0
+
+  @media (max-width: 800px)
+    width: calc(100% - 14rem)
+
+  @media (orientation: portrait)
+    height: calc(100% - 12rem)
+    width: calc(100% - 2rem)
+
+  .map-tile 
+    stroke-width: .1px
+    stroke-opacity: .6
+
+  .tile-content-0-0
+    opacity: .6
+
+.svg-console-portrait-not
+  height: calc(100% - 12rem)
+  width: calc(100% - 2rem)
+  margin-left: 1rem
+  margin-right: 1rem
+  margin-bottom: 1rem
+  margin-top: 5rem
+  border: 1px solid black
+  background-image: url(/img/bg.png)
+  background-size: cover
+  background-repeat: no-repeat
+  position: absolute
+  top: 0
+
+  .map-tile 
+    stroke-width: .1px
+    stroke-opacity: .6
+
+  .tile-content-0-0
+    opacity: .6
+
+.console-title
+  font-family: 'Dancing Script', cursive;
+  font-family: 'Playfair Display', serif
+  font-size: 3rem
+  color: black 
+  @media (max-width: 500px)
+    font-size: 2.2rem
+
+.console-map-title
+  font-size: 2rem
+  color: rgba(19, 31, 4, 0.66)
+  @media (max-width: 500px)
+    font-size: 1.2rem
+
+.console-text
+  font-family: 'Playfair Display', serif
+  font-size: 0.6rem
+  fill: rgba(232, 203, 103, 0.89)
+  stroke: black
+  stroke-width: 0.1
+  opacity: 1
+  @media (max-width: 800px)
+    font-size: 0.5rem
+
+.text__blue
+  fill: rgba(14, 14, 88, 0.62)
+
+.text__black
+  fill: black
+
+.text__red
+  fill: rgba(130, 9, 9, 0.66)
+
+.text__yellow
+  fill: rgba(110, 120, 9, 0.66)
+
+.text__question
+  fill: #332c3a
+  // stroke-width: 0
+  // stroke: black
+  font-size: 1rem
+  font-family: 'Playfair Display', serif
+  font-family: 'Cedarville Cursive', cursive;
+  font-family: 'Dancing Script', cursive;
+
+.text__gold
+  fill: rgba(156, 99, 17, 0.78)
+  stroke: #23210c
+  stroke-width: .2
+
+.text__small
+  font-size: 0.5rem
+  
+.text__2x
+  font-family: 'Cedarville Cursive', cursive;
+  font-family: 'Playfair Display', serif
+  font-size: 1rem
+  stroke-width: 0.2
+ 
+.text__1x
+  font-size: .6rem
+  font-family: 'Dancing Script', cursive;
+  stroke-width: 0.1
+ 
+.text__0x
+  font-size: .33rem
+  fill: rgba(0, 0, 0, 0.59)
+  font-family: sans
+  font-family: 'Dancing Script', cursive;
+  font-family: 'Homemade Apple', cursive;
+  stroke-width: 0
+
+.text__tiny
+  font-size: .28rem
+
+.text__bighand
+  font-size: .6rem
+  fill: rgba(12, 10, 0, 0.81)
+  font-family: 'Homemade Apple', cursive;
+  stroke-width: 1
+
+.text__hand
+  font-family: 'Homemade Apple', cursive;
+  stroke-width: 0
+  font-size: 0.5rem
+  fill: rgba(12, 10, 0, 0.81)
+
+.text__start
+  text-anchor: start 
+
+.text__end
+  text-anchor: end 
+
+.text__middle
+  text-anchor: middle 
+   
+.text__paper
+  fill: rgba(212, 210, 168, 0.66)
+  stroke: rgba(53, 39, 7, 0.63)
+  stroke-width: 0.4
+  box-shadow: 0 5px 20px rgba(0,0,0,0.05), 0 15px 30px -10px rgba(0,0,0,0.3);
+  &:hover
+    fill: lighten(rgba(212, 210, 168, 0.66),22%)
+  
+.text__done
+  fill: rgba(76, 55, 11, 0.46)
+  stroke: rgba(53, 39, 7, 0.63)
+  stroke-width: 0.4
+
+.console-button-bar
+  width: 20rem
+  height: calc(100% - 6rem)
+  padding: 0
+  margin: 0
+  position: absolute
+  top: 6rem
+  right: 0rem
+
+  @media (max-width: 800px)
+    width: 13rem
+
+  @media (orientation: portrait)
+    width: calc(100% - 2rem)
+    height: 5rem
+    top: calc(100% - 6.5rem)
+    left: 1rem
+
+
+.console-button-bar .button
+  width: 19rem
+  height: 9rem
+  margin-right: 0
+  margin-left: 1rem
+  padding: 0
+  font-size: 3.2rem
+  color: #2a2e2e
+  // font-family: 'Domine', serif
+  font-family: 'Playfair Display', serif
+  font-family: 'Dancing Script', cursive;
+  // copy from navigation in colors
+  background: rgb(243,226,199); /* Old browsers */
+  background: -moz-linear-gradient(top,  rgba(243,226,199,1) 0%, rgba(182,141,76,1) 76%, rgba(233,212,179,1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  rgba(243,226,199,1) 0%,rgba(182,141,76,1) 76%,rgba(233,212,179,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  rgba(243,226,199,1) 0%,rgba(182,141,76,1) 76%,rgba(233,212,179,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f3e2c7', endColorstr='#e9d4b3',GradientType=0 ); /* IE6-9 */
+
+  @media (max-width: 800px)
+    width: 12rem
+    font-size: 2rem
+    height: 4rem
+
+  @media (orientation: portrait)
+    width: 24%
+    height: 6rem
+    margin-left: 0
+    padding: 0
+    font-size: 2.2rem
+    color: #2a2e2e
+
+  @media (max-width: 500px) and (orientation: portrait)
+    font-size: 1.5rem
+
+  &:hover
+    color: black
+    border: 1px solid blue
+
+  &:focus
+    color: #5a2d32
+    color: black
+    background: rgb(252,234,187); /* Old browsers */
+    background: -moz-linear-gradient(top,  rgba(252,234,187,1) 0%, rgba(252,205,77,1) 50%, rgba(248,181,0,1) 78%, rgba(251,223,147,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(252,234,187,1) 0%,rgba(252,205,77,1) 50%,rgba(248,181,0,1) 78%,rgba(251,223,147,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(252,234,187,1) 0%,rgba(252,205,77,1) 50%,rgba(248,181,0,1) 78%,rgba(251,223,147,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fceabb', endColorstr='#fbdf93',GradientType=0 ); /* IE6-9 */
+
+.console-button-bar-portrait
+  width: calc(100% - 2rem)
+  height: 5rem
+  padding: 0
+  margin: 0
+  position: absolute
+  top: calc(100% - 6.5rem)
+  left: 1rem
+
+.console-button-bar-portrait .button
+  width: 24%
+  height: 6rem
+  margin-left: 0
+  padding: 0
+  font-size: 2.2rem
+  color: #2a2e2e
+
+  @media (max-width: 500px)
+    font-size: 1.5rem
+
+.console
+	// transition: all 1s
+	border: .5rem solid rgba(80,78,48,0.74)
+	border-radius: 1rem
+	padding-top: 0rem
+	padding-left: 0rem
+	padding-right: 0rem
+	margin: 0 auto
+	position: absolute
+	top: 5rem
+	width: 100vw
+	height: calc(100vh - 5rem)
+	overflow: none
+	// transition: all 0.3s
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#adbca2+0,86c553+100 */
+	background: rgb(173,188,162); /* Old browsers */
+	background: -moz-linear-gradient(top,  rgba(173,188,162,1) 0%, rgba(134,197,83,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  rgba(173,188,162,1) 0%,rgba(134,197,83,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  rgba(173,188,162,1) 0%,rgba(134,197,83,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#adbca2', endColorstr='#86c553',GradientType=0 ); /* IE6-9 */
+
+.console-general
+  margin-left: auto
+  margin-right: auto
+  height: calc(100% - 42rem)
+
+  @media (orientation: portrait)
+    display: hidden
+
+.map-satellite-fill
+  fill: url(#satellite-img)
+
+.tile-details-modal
+  border: 0.5rem solid #23213a
+  border-radius: 0.5rem
+  padding-top: 0.5rem
+  padding-left: 2rem
+  padding-right: 2rem
+  margin-bottom: 0
+  margin: 0 auto
+  // max-width: 80.0rem
+  position: fixed
+  width: 70vw
+  height: 60vh
+  opacity: 1
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#feffe8+0,d6dbbf+100;Wax+3D+%231 */
+  background: rgb(254,255,232); /* Old browsers */
+  background: -moz-linear-gradient(top,  rgba(254,255,232,1) 0%, rgba(214,219,191,1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  rgba(254,255,232,1) 0%,rgba(214,219,191,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  rgba(254,255,232,1) 0%,rgba(214,219,191,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feffe8', endColorstr='#d6dbbf',GradientType=0 ); /* IE6-9 */
+ 
+.console-button 
+  stroke: black
+  stroke-width: .30px
+  fill: white
+  opacity: .3
+  &:hover
+    opacity: .5
+    stroke-width: .4px
+ 
+.carryon-button 
+  stroke: green
+  stroke-width: .40px
+  fill: rgba(5, 80, 62, 0.4);
+  opacity: .8
+  &:hover
+    stroke-width: .8px
+
+.reorg-button 
+  stroke: green
+  stroke-width: .40px
+  fill: rgba(50, 83, 152, 0.67)
+  opacity: .8
+  &:hover
+    stroke-width: .8px
+
+.blue-button 
+  stroke: green
+  stroke-width: .40px
+  fill: rgba(50, 83, 152, 0.67)
+  opacity: .8
+  &:hover
+    stroke-width: .8px
+    
+.fire-button 
+  stroke: #420303
+  stroke-width: .40px
+  fill: #2a2e2e
+  opacity: .8
+  &:hover
+    stroke-width: .8px
+
+.help-button 
+  stroke: rgba(62, 40, 8, 0.88)
+  stroke-width: .40px
+  fill: rgba(152, 138, 50, 0.48)
+  opacity: .8
+  &:hover
+    fill: lighten(rgba(152, 138, 50, 0.48), 20%)
+    stroke-width: .8px
+
+.text__carryon
+  font-size: .8rem
+  font-family: 'Cedarville Cursive', cursive;
+  font-family: 'Dancing Script', cursive;
+  font-family: 'Playfair Display', serif
+  stroke-width: .1px
+  fill: rgba(212, 208, 161, 0.66)
+
+.console-corps-button
+  stroke: black
+  stroke-width: 0.30px
+  fill: white
+  opacity: .3
+  &:hover
+    fill: white
+    opacity: .5
+    stroke-width: .4px
+
+.console-gun-button
+  stroke: black
+  stroke-width: 0.30px
+  fill: white
+  opacity: .3
+  &:hover
+    fill: white
+    opacity: .5
+    stroke-width: .4px
+
+.console-corps-disabled
+  stroke: black
+  stroke-width: 0
+  fill: white
+  opacity: .1
+
+.console-check
+  stroke-width: .6
+  stroke: rgba(80, 78, 48, 0.67)
+  fill: rgba(255, 255, 255, 0.14)
+
+.console-tickbox
+  stroke: black
+  stroke-width: 3
+  stroke: rgba(80, 78, 48, 0.67)
+  fill: rgba(255, 255, 255, 0.14)
+
+.range-bands
+  stroke: #333
+  stroke-width: .2px
+  fill: rgba(62, 111, 52, 0.43)
+
+.unit-layout
+  stroke: #333
+  stroke-width: .2px
+  fill: rgba(62, 111, 52, 0.33)
+
+.unit-outline
+  stroke: #333
+  stroke-width: .2px
+  fill: transparent
+
+.text__unit
+  font-family: 'Homemade Apple', cursive;
+  stroke-width: 0
+  font-size: 0.45rem
+  fill: rgba(12, 10, 0, 0.81)
+
+.unit-selected
+  fill: yellow
+  &:hover
+    fill: yellow
+
+.range-selected
+  fill: rgba(195, 92, 7, 0.44)
+
+.tick 
+  fill: rgba(80, 78, 48, 0.8)
+
+.fight-button
+  fill: rgba(80, 78, 48, 0.16)
+  stroke: #382628
+  stroke-width: .6
+
+.committed
+  fill: rgba(109, 74, 23, 0.69)
+
+.sk-selected
+  fill: rgba(255, 161, 0, 0.8)
+  &:hover
+    fill: rgba(255, 161, 0, 0.8)
+
+.blue-unit-selected
+  fill: rgba(29, 43, 72, 0.54)
+
+.red-unit-selected
+  fill: rgba(72, 29, 34, 0.54)

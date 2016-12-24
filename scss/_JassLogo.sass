@@ -1,0 +1,92 @@
+.jass-logo-container
+	width: 100vw
+	height: calc(100vh - 5rem - 7rem)
+	padding: 3rem
+
+.jass-logo-box
+	display: flex
+	align-items: center
+	justify-content: center
+	height: 100%
+	width: 100%
+	// background-image: url("../img/jass.jpg")
+	background-image: url("../img/flower.png")
+	background-repeat: no-repeat
+	background-position-x: center
+	background-position-y: center
+	background-size: contain
+
+.saturate
+	-webkit-filter: saturate(3)
+	filter: saturate(3)
+
+.jass-logo
+	height: 200px
+
+.jass-logo-top
+	// position: absolute
+	// top: 0
+	left: 0
+	// height: 4.8rem
+	max-width: 75vw
+	bottom: 4.8rem
+
+.jass-splash-box
+	position: absolute
+	overflow-x: hidden
+	top: 5rem
+	background-image: url("../img/models/model-000.jpg")
+	background-repeat: no-repeat
+	background-position: bottom
+	background-size: contain
+	width: 99vw
+	max-width: 99vw
+	height: calc(100vh - 5rem + 1rem)
+	@media (orientation: portrait)
+		background-position-y: center
+
+.jass-model-cycle
+	position: absolute
+	top: 5rem
+	background-image: url("../img/models/model-001.jpg")
+	background-repeat: no-repeat
+	background-position: bottom
+	width: 99vw
+	max-width: 99vw
+	height: calc(100vh - 5rem - 5rem)
+	background-size: contain
+	border-bottom: .3rem solid $jass-green
+	@media (orientation: portrait)
+		background-size: cover
+
+.jass-options
+	font-family: 'JosefinSans', sans-serif
+	font-weight: 500
+	position: absolute
+	bottom: 2rem
+	width: 100%
+
+	.option-row
+		display: flex
+		width: 100%
+		flex-wrap: nowrap
+		justify-content: space-around
+		// border-bottom: 1px solid $jass-shade
+		height: 2.8rem
+		padding-left: 25vw
+		padding-right: 25vw
+		@media(orientation: portrait)
+			height: 4rem
+			padding-left: 1rem 
+			padding-right: 1rem 
+		span
+			font-size: 2.4rem
+			flex: 1
+			text-align: center
+			&:hover
+				color: $jass-green-solid
+				border-bottom: 1px solid $jass-shade
+				font-weight: 800
+
+888een-base
+	border-bottom: .3rem solid $jass-green

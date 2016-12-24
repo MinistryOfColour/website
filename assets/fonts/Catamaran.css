@@ -1,0 +1,10 @@
+@font-face {
+	font-family: 'Catamaran';
+	font-style: normal;
+	font-weight: normal;
+	src:
+		local('Catamaran-Regular'),
+		local('Catamaran-Thin'),
+		url('Catamaran-Regular.ttf') format('truetype'),
+		url('Catamaran-Thin.ttf') format('truetype');
+}

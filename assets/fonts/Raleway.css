@@ -1,0 +1,28 @@
+@font-face {
+	font-family: 'Raleway';
+	font-style: normal;
+	font-weight: normal;
+	src:
+		local('Raleway'),
+		local('Raleway-Regular'),
+		url('Raleway-Regular.ttf') format('truetype'),
+		url('Raleway-ThinItalic.ttf') format('truetype');
+}
+Raleway-BlackItalic.ttf
+Raleway-Black.ttf
+Raleway-BoldItalic.ttf
+Raleway-Bold.ttf
+Raleway-ExtraBoldItalic.ttf
+Raleway-ExtraBold.ttf
+Raleway-ExtraLightItalic.ttf
+Raleway-ExtraLight.ttf
+Raleway-Italic.ttf
+Raleway-LightItalic.ttf
+Raleway-Light.ttf
+Raleway-MediumItalic.ttf
+Raleway-Medium.ttf
+Raleway-Regular.ttf
+Raleway-SemiBoldItalic.ttf
+Raleway-SemiBold.ttf
+Raleway-ThinItalic.ttf
+Raleway-Thin.ttf

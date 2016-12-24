@@ -1,0 +1,41 @@
+package main
+
+import "honnef.co/go/js/dom"
+
+func doSplashPage() {
+	fadeIn("ministry-splash-box", "ministry-options")
+	noButtons()
+	// showButtons("portfolio", "code")
+}
+
+func showTopMenu() {
+	w := dom.GetWindow()
+	doc := w.Document()
+
+	doc.QuerySelector(".ministry-logo-top").Class().Remove("hidden")
+	doc.QuerySelector(".hamburger").Class().Remove("hidden")
+	nav := doc.QuerySelector(".navigation").Class()
+	print("nav class is", nav)
+	nav.Add("loaded")
+	doc.QuerySelector(".navigation").Class().Add("loaded")
+	doc.QuerySelector(".ministry-logo-top").Class().Add("loaded")
+
+	doc.QuerySelector(".ministry-title-name").AddEventListener("click", false, func(evt dom.Event) {
+		print("Clicked on title")
+		w.ScrollTo(0, 0)
+		doSplashPage()
+	})
+
+	doc.QuerySelector(".ministry-logo-top").AddEventListener("click", false, func(evt dom.Event) {
+		print("Clicked on logo")
+		doc.QuerySelector("#code-example").Class().Add("cbp-spmenu-open")
+	})
+
+	sTemplate := MustGetTemplate("code-example")
+	sTemplate.ExecuteEl(doc.QuerySelector("#ministry-code"), &Session)
+
+	doc.QuerySelector("#ministry-code").AddEventListener("click", false, func(evt dom.Event) {
+		print("clik on code")
+		doc.QuerySelector("#code-example").Class().Remove("cbp-spmenu-open")
+	})
+}

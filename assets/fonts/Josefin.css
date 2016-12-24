@@ -1,0 +1,10 @@
+@font-face {
+	font-family: 'JosefinSans';
+	font-style: normal;
+	font-weight: normal;
+	src:
+		local('JosefinSans-Thin'),
+		local('JosefinSans-Regular'),
+		url('JosefinSans-Thin.ttf') format('truetype'),
+		url('JosefinSans-Regular.ttf') format('truetype');
+}

@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="application-name" content="Ministry of Colour">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="description" content="Ministry of Colour. We go a bit deeper than we should, because we like doing the hard stuff">
+    <link rel="manifest" href="ministry.webmanifest">
+    <!-- <link rel="icon" href="img/favicon.png" type="image/x-icon"> -->
+    <link rel="icon" sizes="16x16 32x32 48x48 200x200" href="img/jass.png">
+    <title>Ministry of Colour</title>
+
+    <!-- Fonts -->
+    <!-- <script src="https://use.fontawesome.com/ee68b0acc1.js"></script> -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Anonymous+Pro|VT323" rel="stylesheet">
+
+    <!-- <link rel="stylesheet" href="fonts/Roboto.css">    -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">   
+
+    <!-- Styles -->
+    <!-- <link type="text/css" rel="stylesheet" href="css/treeview.css"/> -->
+    <link type="text/css" rel="stylesheet" href="css/ministry.css"/>
+
+    <!-- Load c3.css -->
+    <!-- <link href="css/c3.min.css" rel="stylesheet" type="text/css"> -->
+    <!-- <link href="css/c3.css" rel="stylesheet" type="text/css"> -->
+
+    <!-- Load d3.js and c3.js -->
+    <!-- <script src="js/d3.min.js" charset="utf-8"></script> -->
+    <!-- <script src="js/c3.js"></script> -->
+    <!-- <script src="js/c3.min.js"></script> -->
+  </head>
+
+<body id="app">
+  <!-- basic layout in here -->
+  <div class="wrapper">
+
+    <div class="navigation">
+        <!-- <a class="navigation-title" href="#" id="homepage"> -->
+          <!-- <img src="img/jass-invert-cropped.jpg" class="jass-logo-top hidden"> -->
+          <img src="img/logo2.png" class="ministry-logo-top">
+          <div class="ministry-title-name">Ministry of Colour</div>
+        <!-- </a> -->
+        <a class="hamburger hamburger--vortex hidden" aria-label="Menu" aria-controls="navigation">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </a>
+
+        <!-- <button class="button button-header float-right no-print" id="hamburger"> -->
+<!--         <div class="float-right" id="hamburger">
+          <span></span>
+  -->       </div>
+    </div>
+  </div>
+
+  <div class="header-pad"></div>
+  <main>
+    <div class="ministry-splash-box hidden"></div>
+
+    <div class="ministry-option-bar hidden">
+      <button id="option-portfolio" class="hidden">Portfolio</button>
+      <button id="option-code" class="hidden">Code</button>
+    </div>
+
+    <div class="ministry-options hidden">
+      <div class="option-row">
+        <span name="opt-what">Services</span>
+        <span name="opt-how"></span>
+        <span name="opt-blog">Blog</span>
+      </div>
+      <div class="option-row">
+        <span name="opt-portfolio">Portfolio</span>
+        <span name="opt-code">GitHub</span>
+      </div>
+    </div>
+  </main>
+
+  <div id="slidemenu-div"></div>
+  <div id="ministry-code"></div>
+
+<div class="md-overlay"></div>
+  
+</body>
+<script src="ministry.js"></script>
+</html>

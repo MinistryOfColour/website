@@ -1,0 +1,19 @@
+{{range $key,$value := .Items}}
+<div class="jass-sale-item" data-sku="{{$value.SKU}}">
+	<div class="sale-image">
+		<img src="/img/items/{{$value.Image}}">
+	</div>
+	<div class="sale-name">
+		{{$value.Name}}
+	</div>
+	<div class="sale-descr">
+		{{$value.Descr}}
+	</div>
+	<div class="sale-price">
+		<span class="add-me"><i class="fa fa-2x fa-cart-plus"></i></span>
+		<span class="the-price">
+		$ {{$value.Price}}
+		</span>
+	</div>
+</div>
+{{end}}

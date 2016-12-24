@@ -1,0 +1,2 @@
+killall -q ministry-website
+exit 0

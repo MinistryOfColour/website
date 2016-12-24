@@ -1,0 +1,9 @@
+@font-face {
+	font-family: 'Aref';
+	font-style: normal;
+	font-weight: normal;
+	src:
+		local('ArefRuqqa-Regular'),
+		url('ArefRuqqa-Regular.ttf') format('truetype'),
+		url('ArefRuqqa-Bold.ttf') format('truetype');
+}

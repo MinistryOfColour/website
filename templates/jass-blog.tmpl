@@ -1,0 +1,10 @@
+{{range $key,$value := .Blogs}}
+<div class="blog-item" name="blog-{{$value.ID}}">
+	<div class="blog-item-pic" name="blog-image-{{$value.ID}}" data-id="{{$value.ID}}"></div>
+	<div class="blog-item-title" name="blog-title-{{$value.ID}}" data-id="{{$value.ID}}">
+		{{$value.Name}}
+	</div>
+</div>
+{{end}}
+
+<div class="jass-logo-small-box"> </div>

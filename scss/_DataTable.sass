@@ -1,0 +1,83 @@
+[draggable] 
+  -moz-user-select: none
+  -khtml-user-select: none
+  -webkit-user-select: none
+  user-select: none
+  /* Required to make elements draggable in old WebKit */
+  -khtml-user-drag: element
+  -webkit-user-drag: element
+
+=_breakpoints($min, $max: false)
+	@if $max == false
+		@media only screen and (min-width: $min)
+			@content
+	@else
+		@media only screen and (min-width: $min) and (max-width: $max)
+			@content
+
+.data-table
+	.data-row
+		margin-left: 1rem
+		margin-right: 1rem
+		.draggable
+			cursor: move
+
+	.data-row:nth-child(even) 
+		background-color: $sbs-evenrow
+
+	.data-row:nth-child(odd) 
+		// background-color: $sbs-oddrow
+		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#fcfff4+0,e9e9ce+100;Wax+3D+%232 */
+		background: rgb(252,255,244); /* Old browsers */
+		background: -moz-linear-gradient(top,  rgba(252,255,244,1) 0%, rgba(233,233,206,1) 100%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(top,  rgba(252,255,244,1) 0%,rgba(233,233,206,1) 100%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to bottom,  rgba(252,255,244,1) 0%,rgba(233,233,206,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,e5e5e5+100;White+3D */
+		background: rgb(255,255,255); /* Old browsers */
+		background: -moz-linear-gradient(top,  rgba(255,255,255,0.9) 0%, rgba(250,250,240,0.6) 100%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(top,  rgba(255,255,255,0.9) 0%,rgba(250,250,240,0.6) 100%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to bottom,  rgba(255,255,255,0.9) 0%,rgba(250,250,240,0.6) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+
+
+	.data-row:hover
+		outline: 1px solid $sbs-ltblue
+
+td.highlight
+  background-color: #e2a445
+
+td.commander
+	font-style: italic
+	font-weight: bold
+	
+.data-table-header
+ border-bottom: 4px solid black
+
+.data-add-btn
+	float: right
+	color: $sbs-blue 
+	font-size: 4.0rem
+	vertical-align: middle
+
+	&:hover
+		transition: 0.3s
+		color: $sbs-green
+
+.data-print-btn
+	float: right
+	color: $sbs-blue 
+	font-size: 4.0rem
+	vertical-align: middle
+
+	&:hover
+		transition: 0.3s
+		color: $sbs-green
+
+.data-del-btn
+	float: right
+	color: $sbs-blue 
+	font-size: 4.0rem
+	vertical-align: middle
+
+	&:hover
+		transition: 0.3s
+		color: $sbs-red
