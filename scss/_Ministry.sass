@@ -11,6 +11,8 @@ body
 	height: 100vh
 	font-family: 'Anonymous Pro', sans-serif
 	font-size: 15vw
+	bottom: 1rem
+	position: absolute
 
 .ministry-logo-top
 	position: absolute
@@ -38,13 +40,15 @@ body
 		// background-position-y: center
 
 .unrotate
-	transform: rotate(0)
+	transition: all 2s
+	transform: rotate(0deg)
 
 .ministry-title-name
 	font-family: 'VT323', sans-serif
 	font-size: 6vw
 	position: absolute
-	height: 5rem
+	height: 4rem
+	max-height: 4rem
 	text-align: center
 	left: 10rem
 
@@ -54,6 +58,8 @@ body
 		display: none
 	@media (min-width: 360px)
 		display: block
+	@media (min-width: 800px)
+		font-size: 2vw
 
 .ministry-options
 	font-family: 'VT323', sans-serif
