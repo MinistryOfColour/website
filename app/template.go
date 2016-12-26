@@ -106,14 +106,17 @@ func init() {
 
 	if err = g.AddTemplate("slidemenu", `<!-- Slide in menu once logged in  -->
 <nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right" id="slidemenu">
-  <a href="#" id="menu-contact"><i class="fa fa-code"></i> Go Code</a>
+  <a href="#" id="menu-contact"><i class="fa fa-code"></i> Code</a>
   <a href="#" id="menu-fragrances"><i class="fa fa-superpowers"></i> Services</a>
   <a href="#" id="menu-skincare"><i class="fa fa-address-book-o"></i> Portfolio</a>
   <a href="#" id="menu-merchandise"><i class="fa fa-gift"></i> Blog</a>
   <a href="#" id="menu-ambassadors"><i class="fa fa-github-alt"></i> GitHub</a>
-  <a href="#" id="menu-blog"><i class="fa fa-lock"></i> Security</a>
-  <a href="#" id="menu-about"><i class="fa fa-database"></i> Database</a>
   <a href="#" id="menu-contact"><i class="fa fa-edit"></i> Framework</a>
+  <a href="#" id="menu-about"><i class="fa fa-database"></i> Hosting</a>
+  <a href="#" id="menu-blog"><i class="fa fa-lock"></i> Security</a>
+  <!-- <a href="#" id="menu-contact"><i class="fa fa-microchip"></i> Embedded</a> -->
+  <!-- <a href="#" id="menu-contact"><i class="fa fa-gears"></i> IoT</a> -->
+  <a href="#" id="menu-contact"><i class="fa fa-fighter-jet"></i> HardStuff</a>
 </nav> 
 
 

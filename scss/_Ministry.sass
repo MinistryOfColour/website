@@ -1,10 +1,12 @@
 body 
 	cursor: pointer
-	background-color: white
+	background-color: rgba(51, 173, 84, 0.64)
 	font-family: 'Anonymous Pro',sans-serif
-
 	-webkit-filter: saturate(3)
 	filter: saturate(3)
+
+	.loaded-body
+		background-color: white !important
 
 .ministry-cyrillic-thing
 	width: 100vw
@@ -34,14 +36,12 @@ body
 	max-width: 99vw
 	height: calc(100vh - 12rem)
 	cursor: pointer
-	transition: all 2s
+	transition: all 3s ease-in
 	transform: rotate(-60deg)
-	// @media (orientation: portrait)
-		// background-position-y: center
 
 .unrotate
-	transition: all 2s
 	transform: rotate(0deg)
+	filter: contrast(22)
 
 .ministry-title-name
 	font-family: 'VT323', sans-serif

@@ -27,12 +27,6 @@ func fadeIn(element ...string) {
 		return false
 	}
 
-	// fade in all the things
-	for _, theElement := range element {
-		print("fade in element", theElement)
-		doc.QuerySelector("." + theElement).Class().SetString(theElement + " fade-in fast")
-	}
-
 	// fade out everything else
 	gotSome := false
 	for _, v := range elements {
@@ -63,6 +57,12 @@ func fadeIn(element ...string) {
 				}
 			}
 		}()
+	}
+
+	// fade in all the things
+	for _, theElement := range element {
+		print("fade in element", theElement)
+		doc.QuerySelector("." + theElement).Class().SetString(theElement + " fade-in fast")
 	}
 
 }

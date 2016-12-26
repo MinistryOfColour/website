@@ -1,6 +1,10 @@
 package main
 
-import "honnef.co/go/js/dom"
+import (
+	"time"
+
+	"honnef.co/go/js/dom"
+)
 
 func doSplashPage() {
 	w := dom.GetWindow()
@@ -9,7 +13,10 @@ func doSplashPage() {
 	fadeIn("ministry-splash-box", "ministry-options")
 	noButtons()
 
-	doc.QuerySelector(".ministry-splash-box").Class().Add("unrotate")
+	go func() {
+		time.Sleep(2 * time.Second)
+		doc.QuerySelector(".ministry-splash-box").Class().Add("unrotate")
+	}()
 
 	// showButtons("portfolio", "code")
 }
@@ -25,6 +32,8 @@ func showTopMenu() {
 	nav.Add("loaded")
 	doc.QuerySelector(".navigation").Class().Add("loaded")
 	doc.QuerySelector(".ministry-logo-top").Class().Add("loaded")
+	// doc.QuerySelector("body").Class().Add("loaded-body")
+	doc.QuerySelector("body").(*dom.HTMLBodyElement).Style().SetProperty("background-color", "white", "")
 
 	doc.QuerySelector(".ministry-title-name").AddEventListener("click", false, func(evt dom.Event) {
 		print("Clicked on title")
