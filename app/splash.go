@@ -16,6 +16,8 @@ func doSplashPage() {
 	go func() {
 		time.Sleep(2 * time.Second)
 		doc.QuerySelector(".ministry-splash-box").Class().Add("unrotate")
+		time.Sleep(2 * time.Second)
+		doc.QuerySelector("body").(*dom.HTMLBodyElement).Style().SetProperty("background", "white", "")
 	}()
 
 	// showButtons("portfolio", "code")

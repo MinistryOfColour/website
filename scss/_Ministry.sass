@@ -1,12 +1,18 @@
 body 
 	cursor: pointer
 	background-color: rgba(51, 173, 84, 0.64)
+	background: -moz-linear-gradient(-45deg,  rgba(191,210,85,1) 0%, rgba(142,185,42,1) 43%, rgba(114,170,0,1) 67%, rgba(158,203,45,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(-45deg,  rgba(191,210,85,1) 0%,rgba(142,185,42,1) 43%,rgba(114,170,0,1) 67%,rgba(158,203,45,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(135deg,  rgba(191,210,85,1) 0%,rgba(142,185,42,1) 43%,rgba(114,170,0,1) 67%,rgba(158,203,45,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bfd255', endColorstr='#9ecb2d',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
 	font-family: 'Anonymous Pro',sans-serif
 	-webkit-filter: saturate(3)
 	filter: saturate(3)
 
 	.loaded-body
 		background-color: white !important
+		background: white !important
 
 .ministry-cyrillic-thing
 	width: 100vw
@@ -90,6 +96,7 @@ body
 			text-align: center
 			&:hover
 				color: green
+				// background: rgba(0,0,0,.3)
 				// border-bottom: 1px solid $jass-shade
 				font-weight: 600
 
